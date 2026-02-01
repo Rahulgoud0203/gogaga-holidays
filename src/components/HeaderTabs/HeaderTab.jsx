@@ -1,5 +1,5 @@
 import React from "react";
-import "./HeaderTab.css";
+import "./headerTab.css";
 import {
   FiChevronRight,
   FiChevronDown,
