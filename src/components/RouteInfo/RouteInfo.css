@@ -1,0 +1,21 @@
+.route-bar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  width:100%;
+}
+
+.route-bar label {
+  font-size: 11px;
+  color: #6b7280;
+}
+
+.route-bar p {
+  font-size: 13px;
+  margin: 2px 0 0;
+  color: #111827;
+}

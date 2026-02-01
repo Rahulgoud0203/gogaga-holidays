@@ -1,0 +1,94 @@
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.filter-row {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.input-group {
+  width: 1000px;
+  height: 49px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.input-dest {
+  width: 500px;
+}
+.input-group input {
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  background: #fafafa;
+  margin-right: 20px;
+}
+.No-of-passangers {
+  width:155px;
+  background: transparent;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-right: 10px;
+}
+.search-btn {
+  background: black;
+  color: white;
+  height: 42px;
+  border: 1px solid #e5e7eb;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.hotel-standard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  font-family: monospace;
+}
+.hotel-standard .label {
+  width: 20%;
+  font-size: 19px;
+  font-weight: bold;
+  color: #111827;
+  margin-right: 3px;
+  align-self: flex-start;
+}
+.pill {
+  min-width: 32px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  color: #111827;
+}
+
+.pill.active {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 13px;
+  color: #111827;
+  cursor: pointer;
+}
+
+.checkbox input {
+  width: 14px;
+  height: 14px;
+  accent-color: #000000;
+}

@@ -1,0 +1,74 @@
+.Packagetab {
+  width: 80vw;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: #fbfbfd;
+  border-left: 1px solid #e6e6e6;
+  padding: 10px;
+  height: 100%;
+}
+.Holidays-national {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+.btn-upper {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  border-width: 0px;
+  cursor: pointer;
+  gap: 3px;
+}
+.normal-btn {
+  background-color: white;
+  border: 0px solid #e6e6e6;
+}
+
+.package-normal-btn {
+  background: transparent;
+  background-color: #fbfbfd;
+  padding: 10px;
+  padding: 10px;
+  border-width: 0px;
+  font-weight: bold;
+}
+.package-btn-underline {
+  background: transparent;
+  font-weight: bold;
+  border-width: 0px;
+  text-decoration: underline;
+  padding: 10px;
+  padding: 10px;
+  text-decoration-thickness: 3px;
+}
+
+.bg-packages{
+  width:70vw;
+}
+
+.flight-list{
+  display:flex;
+  justify-content: space-between;
+  gap:20px;
+  height: 90vh;
+  width:50%;
+}
+.flight-list-left{
+  height:100%;
+  overflow:auto;
+}
+.flight-list-right{
+  height:100%;
+  overflow:auto;
+}
+.scroll-container{
+  scrollbar-width: thin;
+  scrollbar-color:#c1c7d0 transparent;
+  border-radius: 6px;
+}
