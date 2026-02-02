@@ -1,5 +1,5 @@
 
-import "./fareSummary.css"
+import "./index.css"
 function FareSummary() {
   return (
     <div>

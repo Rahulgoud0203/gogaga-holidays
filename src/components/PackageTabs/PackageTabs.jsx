@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./packageTabs.css";
+import "./index.css";
 import Searchfilters from "../SearchFilters/Searchfilters";
 import RouteInfo from "../RouteInfo/RouteInfo";
 import FareSummary from "../FareSummary/FareSummary";
