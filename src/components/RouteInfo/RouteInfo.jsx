@@ -1,5 +1,5 @@
 
-import'./routeInfo.css'
+import'./RouteInfo.css'
 function RouteInfo() {
   return (
     <div>
