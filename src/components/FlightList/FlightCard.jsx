@@ -1,38 +1,60 @@
-import React from 'react'
-import "./FlightCard.css"
-function FlightCard() {
+import React from "react";
+import "./FlightCard.css";
+function FlightCard({flights }) {
+  
   return (
-     <div className="flight-column">
+    <div className="flight-column">
       <div className="flight-card">
         <div className="flight-top">
           <div className="airline">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Air_India_Express_Logo.svg" />
+            <img src={flights.airline.logo} />
             <div>
-              <strong>Air India Express</strong>
-              <small>IX 2879 TC</small>
+              <strong>{flights.airline.name}</strong>
+              <small>{flights.airline.code}</small>
             </div>
           </div>
 
-          <div className="time">12:05<br/><small>HYD</small></div>
-          <div className="duration">01h 25m<br/><small>Non stop</small></div>
-          <div className="time">13:30<br/><small>GOI</small></div>
+          <div className="time">
+            {flights.route.from.time}
+            <br />
+            <small>{flights.route.from.code}</small>
+          </div>
+          <div className="duration">
+            {flights.route.duration}
+            <br />
+            <small>{flights.route.stopType}</small>
+          </div>
+          <div className="time">
+            {flights.route.to.time}
+            <br />
+            <small>{flights.route.to.code}</small>
+          </div>
         </div>
         <div className="divider-flight"></div>
         <div className="price-row">
-          <label><input type="checkbox" defaultChecked /> ₹13,300.00 <span className="tag publish">Publish</span></label>
-          <label><input type="checkbox" /> ₹29,144.00 <span className="tag pink">XpressBiz</span></label>
+          <label>
+            <input type="checkbox" defaultChecked={flights.pricing[0].selected} />
+            {flights.pricing[0].price}
+            <span className="tag publish">{flights.pricing[0].type}</span>
+          </label>
+          <label>
+            <input type="checkbox" defaultChecked={flights.pricing[1].selected} />
+            {flights.pricing[1].price}
+            <span className="tag pink">{flights.pricing[1].type}</span>
+          </label>
         </div>
         <div className="divider-flight"></div>
 
         <div className="extra-info">
-          <span>Hand Baggage · 7 Kg</span>
+          <span>Hand Baggage ·{flights.baggage.hand}</span>
           <span>Check-In Baggage</span>
-          <span>Refundable</span>
+          <span>{flights.refundable ? "refundable" : "NoRefundable"}</span>
           <span>Rules</span>
+          
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default FlightCard
+export default FlightCard;
