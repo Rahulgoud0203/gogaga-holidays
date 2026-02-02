@@ -1,5 +1,5 @@
 import React from "react";
-import'./RouteInfo.css'
+import'./routeInfo.css'
 function RouteInfo() {
   return (
     <div>

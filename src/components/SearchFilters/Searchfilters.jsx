@@ -1,5 +1,5 @@
 import React from "react";
-import "./Searchfilters.css";
+import "./searchfilters.css";
 function Searchfilters() {
   return (
     <div>

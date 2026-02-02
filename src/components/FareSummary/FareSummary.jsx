@@ -1,5 +1,5 @@
-import React from "react";
-import "./FareSummary.css"
+
+import "./fareSummary.css"
 function FareSummary() {
   return (
     <div>
