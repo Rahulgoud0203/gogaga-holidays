@@ -8,7 +8,7 @@ function FlightCard({flights }) {
         <div className="flight-top">
           <div className="airline">
             <img src={flights.airline.logo} />
-            <div>
+            <div className="airline-inner">
               <strong>{flights.airline.name}</strong>
               <small>{flights.airline.code}</small>
             </div>

@@ -38,7 +38,10 @@
   gap: 8px;
   align-items: center;
 }
-
+.airline-inner{
+  display:flex;
+  flex-direction: column;
+}
 .airline img {
   width: 28px;
 }
